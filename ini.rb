@@ -1,1 +1,1 @@
-require 'tire/settings'
+require 'tire-settings'
