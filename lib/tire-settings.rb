@@ -11,4 +11,4 @@ module TireSettings
 end
 
 
-Tire::Index.extend Tire::Settings
+Tire::Index.extend TireSettings
