@@ -11,4 +11,4 @@ module TireSettings
 end
 
 
-Tire::Index.extend TireSettings
+Tire::Index.send(:include, TireSettings)
