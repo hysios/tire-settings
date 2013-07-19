@@ -6,7 +6,7 @@ module TireSettings
   extend ActiveSupport::Concern
 
   def put_settings(options)
-	@response = Configuration.client.put("#{url}/_settings",  MultiJson.encode(payload))
+	@response = ::Tire::Configuration.client.put("#{url}/_settings",  MultiJson.encode(payload))
     MultiJson.decode(@response.body)["ok"]
   end
 end
